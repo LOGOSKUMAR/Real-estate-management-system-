@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EstateFlow Services</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!----box-icons---->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!----google fonts---->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--AOS animation-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+
+        <!--header---->
+        <header class="sticky">
+            <a href="#" class="logo">
+                <img src="D:\Real-estate-project\Real-estate-project-master\images\EstateFlow Logo.png" alt="EstateFlow Logo">
+            </a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="property.html">Properties</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+            
+
+            <div class="h-btn">
+                <a href="login.html" class="h-btn1">Login</a>
+                <a href="signup.html" class="h-btn2">Sign Up</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+
+        <!--home-section-->
+        <section class="home">
+            <div class="home-text" data-aos="zoom-in-up">
+                <h1>Explore Our Real Estate Services</h1>
+                <p>Scroll down to discover how EstateFlow can help you manage, buy, or lease properties with ease.</p>
+            </div>
+        </section>
+
+        <!--services-section-->
+<section class="services" id="services">
+    <div class="center-left">
+        <h1>Our Services</h1>
+    </div>
+
+    <div class="services-content">
+        <div class="service-item">
+            <i class='bx bx-home-alt'></i>
+            <h2>Property Management</h2>
+            <p>We manage all aspects of your properties from tenant screening to rent collection.</p>
+        </div>
+
+        <div class="service-item">
+            <i class='bx bx-key'></i>
+            <h2>Buying & Selling</h2>
+            <p>We provide seamless experiences for buying or selling properties.</p>
+        </div>
+
+        <div class="service-item">
+            <i class='bx bx-building-house'></i>
+            <h2>Leasing</h2>
+            <p>We help tenants and landlords with comprehensive lease management services.</p>
+        </div>
+    </div>
+</section>
+
+        <!--AOS JS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 300,
+                duration: 1200
+            });
+
+            // Smooth scrolling for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+        <!--JS File-->
+        <script src="js/script.js"></script>
+
+    </body>
+</html>

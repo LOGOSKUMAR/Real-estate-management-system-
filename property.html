@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - EstateFlow</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky">
+        <a href="#" class="logo">
+            <img src="D:\Real-estate-project\Real-estate-project-master\images\EstateFlow Logo.png" alt="EstateFlow Logo">
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="properties.html" class="active">Properties</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="h-btn">
+            <a href="login.html" class="h-btn1">Login</a>
+            <a href="signup.html" class="h-btn2">Sign Up</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- Properties Section -->
+    <section class="properties" data-aos="fade-up" style="margin-top: 100px;">
+        <div class="center-left">
+            <h1>Rental Price Management</h1>
+        </div>
+
+        <div class="properties-content">
+            <div class="property-item" style="padding: 20px;">
+                <h2>Set Rental Prices</h2>
+                <p>Determine competitive rental rates based on market trends and property value. Make sure your rental pricing attracts tenants while maximizing returns.</p>
+                <form>
+                    <label for="rental-price">Enter Rental Price (INR):</label><br>
+                    <input type="number" id="rental-price" name="rental-price" placeholder="Enter price" required><br><br>
+                    <input type="submit" value="Set Price">
+                </form>
+            </div>
+
+            <div class="property-item" style="padding: 20px;">
+                <h2>Collect Rent</h2>
+                <p>Automate your rent collection process. View and manage rent payment statuses from tenants quickly and efficiently.</p>
+                <form>
+                    <label for="tenant-name">Tenant Name:</label><br>
+                    <input type="text" id="tenant-name" name="tenant-name" placeholder="Enter tenant name" required><br><br>
+
+                    <label for="amount-paid">Amount Paid (INR):</label><br>
+                    <input type="number" id="amount-paid" name="amount-paid" placeholder="Enter amount" required><br><br>
+
+                    <input type="submit" value="Mark as Paid">
+                </form>
+            </div>
+
+            <div class="property-item" style="padding: 20px;">
+                <h2>Adjust Rental Prices</h2>
+                <p>Review rental prices periodically and adjust based on inflation, demand, and other factors to stay competitive.</p>
+                <form>
+                    <label for="current-price">Current Rental Price (INR):</label><br>
+                    <input type="number" id="current-price" name="current-price" placeholder="Enter current price" required><br><br>
+
+                    <label for="new-price">New Rental Price (INR):</label><br>
+                    <input type="number" id="new-price" name="new-price" placeholder="Enter new price" required><br><br>
+
+                    <input type="submit" value="Update Price">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-container">© EstateFlow, All rights reserved.</div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1200
+        });
+    </script>
+
+    <!-- JS File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
